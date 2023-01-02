@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header>
+      <p>Proyecto "Encriptador - Desencriptador"</p>
+  </header>
+
+  <main>
+    <section class="encriptar-mensaje">
+
+      <textarea class="text-area" name="introducir-texto" id="introducir-texto"  cols="50" rows="10" placeholder="Ingrese su texto aquí:"></textarea>
+
+      <div class="advertencia">
+        <p>Solamente letras minúsculas y sin tildes</p>
+      </div>
+        
+      <div class="botones">
+        <button id="btn1" class="btn1">Encriptar</button>
+        <button id="btn2" class="btn2">Desencriptar</button>
+      </div>
+
+    </section>
+
+    <section class="tablero">
+
+      <div id="figura" class="contenedor-imagen">
+        <img src="imgs/Muñeco.png" alt="Muñeco">
+        <p class="text1"><strong>No se ha encontrado ningún mensaje</strong></p>
+        <p class="text2">Ingresa el texto que deseas encriptar o desencriptar</p>
+      </div>
+      
+      <p id="resultado"></p>
+      <button id="boton_copiar" class="boton_copiar">Copiar</button>
+
+    </section>
+
+  </main>
+
+  <script src="js/encriptar.js"></script>
+  <script src="js/desencriptar.js"></script>
+  <script src="js/copiar.js"></script>
+  
+</body>
+</html>
