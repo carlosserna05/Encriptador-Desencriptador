@@ -7,32 +7,32 @@ var no = "none";
 
 function resultado(ver){
   document.getElementById("resultado").style.display = ver;  
-  document.getElementById("boton_copiar").style.display = ver;
+  document.getElementById("btn_copiar").style.display = ver;
   document.getElementById("resultado").style.display = ver;
 }
 
-document.getElementById("figura").style.display = "";
+document.getElementById("inicial").style.display = "";
 
 resultado(no);
 
 function encriptar(){
-  document.getElementById("figura").style.display = "none";
+  document.getElementById("inicial").style.display = "none";
   var msjEncriptado = "";
-  var mensaje = document.querySelector("#introducir-texto").value;
+  var mensaje = document.querySelector("#txt-input").value;
   var mayus = /[A-Z]/g;
   var caracteres = /[~áéíóúàèìòùÁÉÍÓÚ']/g;
 
   if(mensaje == ""){
 
-    document.getElementById("figura").style.display = "";
+    document.getElementById("inicial").style.display = "";
     resultado(no)
   }else if (mensaje.match(mayus) != mensaje.match(mayus)){
     
-      document.getElementById("figura").style.display = "";
+      document.getElementById("inicial").style.display = "";
       resultado(no);
   }else if (mensaje.match(caracteres) != mensaje.match(caracteres)){
       
-      document.getElementById("figura").style.display = "";
+      document.getElementById("inicial").style.display = "";
       resultado(no);
   }
   else{
@@ -63,7 +63,7 @@ function encriptar(){
         }
     }
       document.getElementById("resultado").innerHTML=msjEncriptado;
-      document.getElementById("introducir-texto").value = "";
+      document.getElementById("txt-input").value = "";
       resultado(si)
   }
 }

@@ -1,11 +1,11 @@
-const boton_copiar = document.querySelector("#boton_copiar");
+const copiar = document.querySelector("#btn_copiar");
 const texto = document.querySelector("#resultado");
-const areaEncriptar = document.querySelector("#introducir-texto");
+const zonaEncriptar = document.querySelector("#txt-input");
 
-boton_copiar.addEventListener("click",() => {      
+copiar.addEventListener("click",() => {      
   navigator.clipboard.writeText(texto.innerHTML);
-  document.getElementById("introducir-texto").focus();
-  areaEncriptar.focus();
+  document.getElementById("txt-input").focus();
+  zonaEncriptar.focus();
 
   });
 

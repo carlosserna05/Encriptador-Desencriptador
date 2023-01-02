@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #e2c58b; /* #004643 */
+    background: #e2c58b; 
     font-family: 'PT Mono', monospace;
 }
   
@@ -35,7 +35,7 @@ main {
     align-items: center;
 }
 
-.encriptar-mensaje {
+.ctn-encriptar {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -43,7 +43,7 @@ main {
 }
 
 
-.text-area {
+.txt-input {
     width: 80%;
     height: 50%;
     padding: 0.5em;
@@ -57,12 +57,12 @@ main {
     line-height: 125%;
 }
 
-.text-area::placeholder {
+.txt-input::placeholder {
     color: #523e19;
     font-size: 25px;
 }
 
-.advertencia {
+.advert {
     display: flex;
     width: 50%;
     margin: auto;
@@ -70,7 +70,7 @@ main {
     justify-content: center;
 }
 
-.advertencia p {
+.advert p {
     width: 100%;
     text-align: center;
     font-size: 20px;
@@ -109,7 +109,7 @@ main {
 }
 
 
-.tablero {
+.ctn-tablero {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,7 +127,7 @@ main {
     height: 640px;
 }
 
-.contenedor-imagen img {
+.inicial img {
     display: flex;
     width: 80%;
     margin: auto;
@@ -169,7 +169,7 @@ main {
     line-height: 150%;
 }
 
-.boton_copiar {
+.btn_copiar {
     display:inline;
     width: 100%;
     height: 4em;        
@@ -188,8 +188,6 @@ main {
 }
 
 
-
-/*Responsive design*/
 @media only screen and (max-width: 770px) {
     main {
         display: flex;
@@ -197,17 +195,19 @@ main {
         width: 100%;
     }
 
-    header img {
-        width: 10%;
+    header {
+        margin: auto;
+        margin-top: 3.5em;    
     }
+    
 
-    .encriptar-mensaje {
+    .ctn-encriptar {
         margin: auto;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
     }
 
-    .encriptar-mensaje p {
+    .ctn-encriptar p {
         padding-top: 1.5em;
     }
 
@@ -222,22 +222,22 @@ main {
         font-size: 15px;
     }
 
-    .text-area {
+    .txt-input {
         font-size: 1.5em;    
         margin: 0;
-        margin-top: 10%;
+        margin-top: 2.5%;
         width: 100%;
     }
 
-    .text-area::placeholder {
+    .txt-input::placeholder {
         font-size: 20px;
     }
 
-    .advertencia p {
+    .advert p {
         font-size: 15px;
     }
 
-    .tablero {
+    .ctn-tablero {
         margin: 0 auto;
         font-size: 100%;
         width: 90%;
@@ -245,7 +245,7 @@ main {
         margin-bottom: 70px;
     }
 
-    .tablero img {
+    .ctn-tablero img {
         display: none;
         margin: none;
     }
@@ -255,15 +255,11 @@ main {
         width: 90%;
     }
 
-    .boton_copiar {
+    .btn_copiar {
         width: 100%;
         height: 3em;        
         font-size: 15px;
         margin-bottom: 1.5em;
-    }
-
-    footer {
-        font-size: 0.8em; 
     }
 }
 
@@ -279,32 +275,29 @@ main {
     }
 
     header {
-        width: auto;
-        margin-left: 2em;
-        margin-top: 4em;
+        width: 37em;
+        margin-top: 5%;
+        font-size: 10px;
+        text-align: center;
     }
 
-    header img {
-        width: 7%;
-    }
-
-    .encriptar-mensaje {
+    .ctn-encriptar {
         margin: auto;
     }
 
 
-    .text-area {
+    .txt-input {
         font-size: 1.2em;    
         margin: 0;
         margin-top: 10%;
         width: 100%;
     }
 
-    .text-area::placeholder {
+    .txt-input::placeholder {
         font-size: 1em;
     }
 
-    .encriptar-mensaje p {
+    .ctn-encriptar p {
         margin-top: 2em;
         padding-top: 1em;
         font-size: 0.7em;
@@ -314,17 +307,19 @@ main {
         display: flex;
         flex-direction: column;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 20px;
         width: 100%;
     }
 
     .btn1, .btn2 {
+        height: 4em;
         width: 100%;
+        margin-bottom: 10px;
         align-items: center;
     }
 
 
-    .tablero {
+    .ctn-tablero {
         margin: auto;
         margin-top: 20px;
         margin-bottom: 70px;
@@ -334,7 +329,7 @@ main {
         
     }
 
-    .tablero img {
+    .ctn-tablero img {
         display: none;
         margin: none;
     }
@@ -342,10 +337,6 @@ main {
     #resultado {
         height: auto;
         margin-left: 15px;
-    }
-
-    footer {
-        font-size: 0.8em; 
     }
 
 }
